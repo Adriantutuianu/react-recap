@@ -6,6 +6,10 @@ function App() {
   const [isActive, setIsActive] = useState(false);
   const [age, setAge] = useState(33);
 
+  const resetAge = () => {
+    setAge(33);
+  };
+
   return (
     <div className="App">
       <p style={{ color: isActive ? "red" : "green" }}>{name}</p>
@@ -20,6 +24,10 @@ function App() {
 
       <p>Adrian is {age} years old.</p>
       <p>Next year Adrian will be {age + 1}.</p>
+      {age === 33 && <p>This is visible.</p>}
+
+      <button onClick={() => setAge(20)}>Make Adrian younger.</button>
+      <button onClick={() => resetAge()}>Reset Age</button>
     </div>
   );
 }
