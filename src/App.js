@@ -7,6 +7,10 @@ function App() {
   return (
     <div className="App">
       <p>{name}</p>
+      <button onClick={() => setName("Johnny")}>Change name to Johhny </button>
+      <button onClick={() => setName("Adrian")}>
+        Change name back to Adrian{" "}
+      </button>
     </div>
   );
 }
