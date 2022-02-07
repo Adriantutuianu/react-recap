@@ -12,6 +12,7 @@ function App() {
       <button onClick={() => setName("Adrian")}>
         Change name back to Adrian{" "}
       </button>
+      <button onClick={() => setIsActive(!isActive)}>Toggle active</button>
     </div>
   );
 }
