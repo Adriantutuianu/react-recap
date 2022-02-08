@@ -5,11 +5,15 @@ function App() {
   const [name, setName] = useState("Adrian");
   const [isActive, setIsActive] = useState(false);
   const [age, setAge] = useState(33);
+  const [fruits, setFruits] = useState(["banana", "kiwi", "pineapple"]);
 
   const resetAge = () => {
     setAge(33);
   };
 
+  const displayedFruits = fruits.map((fruit) => {
+    return fruit;
+  });
   return (
     <div className="App">
       <p style={{ color: isActive ? "red" : "green" }}>{name}</p>
@@ -28,6 +32,7 @@ function App() {
 
       <button onClick={() => setAge(20)}>Make Adrian younger.</button>
       <button onClick={() => resetAge()}>Reset Age</button>
+      {displayedFruits}
     </div>
   );
 }
