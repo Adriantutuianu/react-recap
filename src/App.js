@@ -34,7 +34,7 @@ function App() {
       <button onClick={() => resetAge()}>Reset Age</button>
       {displayedFruits}
 
-      <button onClick={() => setFruits([...fruits, "pear"])}>Add pear</button>
+      <button onClick={() => setFruits([fruits, "pear"])}>Add pear</button>
     </div>
   );
 }
