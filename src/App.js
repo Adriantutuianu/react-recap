@@ -33,6 +33,8 @@ function App() {
       <button onClick={() => setAge(20)}>Make Adrian younger.</button>
       <button onClick={() => resetAge()}>Reset Age</button>
       {displayedFruits}
+
+      <button onClick={() => setFruits([...fruits, "pear"])}>Add pear</button>
     </div>
   );
 }
